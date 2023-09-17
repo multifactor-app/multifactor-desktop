@@ -1,7 +1,7 @@
 {
-  "name": "multifactor-pc",
+  "name": "multifactor-desktop",
   "displayName": "Multifactor",
-  "description": "Desktop Multifactor client app",
+  "description": "Desktop Multifactor client app for multifactor.ru",
   "version": "0.0.1",
   "private": true,
   "author": {
@@ -17,8 +17,9 @@
     "build:linux": "yarn unpack-app && electron-builder --config electron-builder-config.js --linux"
   },
   "devDependencies": {
+    "asar": "3.2.0",
     "electron": "25.1.0",
     "electron-builder": "23.6.0",
-    "rimraf": "^5.0.1"
+    "rimraf": "5.0.1"
   }
 }
