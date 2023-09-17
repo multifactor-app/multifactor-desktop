@@ -1,0 +1,24 @@
+{
+  "name": "multifactor-pc",
+  "displayName": "Multifactor",
+  "description": "Desktop Multifactor client app",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "NK",
+    "email": "multifactor.app@gmail.com"
+  },
+  "license": "UNLICENSED",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "unpack-app": "yarn rimraf res/app && yarn asar extract res/app.asar res/app",
+    "build:win": "yarn unpack-app && electron-builder --config electron-builder-config.js --windows",
+    "build:mac": "yarn unpack-app && electron-builder --config electron-builder-config.js --macos",
+    "build:linux": "yarn unpack-app && electron-builder --config electron-builder-config.js --linux"
+  },
+  "devDependencies": {
+    "electron": "25.1.0",
+    "electron-builder": "23.6.0",
+    "rimraf": "^5.0.1"
+  }
+}
