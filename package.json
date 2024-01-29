@@ -17,9 +17,9 @@
     "build:linux": "yarn unpack-app && electron-builder --config electron-builder-config.js --linux"
   },
   "devDependencies": {
-    "asar": "3.2.0",
-    "electron": "25.1.0",
-    "electron-builder": "23.6.0",
-    "rimraf": "5.0.1"
+    "@electron/asar": "3.2.8",
+    "electron": "28.1.4",
+    "electron-builder": "24.9.1",
+    "rimraf": "5.0.5"
   }
 }
